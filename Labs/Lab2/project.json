@@ -1,0 +1,88 @@
+{
+  "name": "BlankProcess",
+  "projectId": "d10e8680-f806-44cc-bb18-cf6430392f9f",
+  "description": "Blank Process",
+  "main": "Flowchart.xaml",
+  "dependencies": {
+    "UiPath.System.Activities": "[25.8.1]",
+    "UiPath.UIAutomation.Activities": "[25.10.13]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.0.176.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "30aa6ed4-e262-4f1c-b9ef-48f1c77a2de3",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "OpenGoogle.xaml",
+      "uniqueId": "19bd3202-a5a8-4097-8aa6-2ed9db14d02e",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "IMBDMain.xaml",
+      "uniqueId": "143dd227-7afb-46f7-ae36-56f533aeda90",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Flowchart.xaml",
+      "uniqueId": "641896e9-6dab-4ec2-a9cd-5e69d3eec611",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "ExtractInformation.xaml",
+      "uniqueId": "546ed289-1182-44a2-a086-326951d12518",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "SearchIMBD.xaml",
+      "uniqueId": "6309670c-78ad-4eb9-9bc4-80c07e3ad3e4",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

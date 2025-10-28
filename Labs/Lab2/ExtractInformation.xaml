@@ -1,0 +1,192 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="EtractInformation" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="EtractInformation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="EtractInformation" sap:VirtualizedContainerService.HintSize="885.2,2064.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="CurrentUrl" />
+      <Variable x:TypeArguments="x:String" Name="Rate" />
+      <Variable x:TypeArguments="x:String" Name="Popularity" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="584,2041.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Black Phone 2 (2025) - IMDb" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="550.4,1958.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="2187e9a9-0401-47c0-b44f-622cc7928aa3" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="516.8,1718.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGetText DisplayName="Get Text 'httpswww.imdb.comti…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="483.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="2187e9a9-0401-47c0-b44f-622cc7928aa3" TextString="[CurrentUrl]" Version="V5">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="imdb.com/title/tt29644189" CVScreenId="7ba8e257-d9e3-430b-835a-4c4c7f45809e" ContentHash="8iA6Epwkq0OaCsNfUn43tQ" CvElementArea="104, 55, 1341, 41" CvType="InputBox" DesignTimeRectangle="146, 59, 1084, 35" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Black Phone 2 (2025) - IMDb - Microsoft Edge - Personal' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" Guid="03021b45-f60d-40e1-b4b6-ec1bef12c661" InformativeScreenshot="1b9db01e1dcbcec16cc16555ed2bef46.png" Reference="BzXtTaSwp0OnAqBIfr9gMw/1lYKXCdLz0GZkNw3Az4ZGw" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Black Phone 2 (2025) - IMDb - Personal - Microsoft​ Edge' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="483.2,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[CurrentUrl]" />
+              <uix:NGetText DisplayName="Rate" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="483.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="2187e9a9-0401-47c0-b44f-622cc7928aa3" TextString="[Rate]" Version="V5">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="imdb.com/title/tt29644189" CVScreenId="9f06b1f0-ab6f-42e2-8c51-73120cfa26b6" ContentHash="D1RRGwhsd0eIshMvwxX8MA" CvType="AnyWordGroup" DesignTimeRectangle="1340, 317, 40, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='SPAN' type='' class='sc-4dc495c1-1 lbQcRY' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="8b25da4e-f0ff-427c-b4ae-e8f94290a88e" InformativeScreenshot="d0470285129e755466eac3c454de7ed6.png" Reference="BzXtTaSwp0OnAqBIfr9gMw/tf0pTrG3OkiCV5GvKdrHdg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Black Phone 2 (2025) - IMDb' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="483.2,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[Rate]" />
+              <uix:NGetText DisplayName="Get Text '33(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="483.2,189.6" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="2187e9a9-0401-47c0-b44f-622cc7928aa3" TextString="[Popularity]" Version="V5">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="imdb.com/title/tt29644189" CVScreenId="f10a91f3-01ac-4b95-a3b7-9f871dadfa0a" ContentHash="zDu76OiC_E2ehnbq51W8Cw" CvType="AnyWordGroup" DesignTimeRectangle="1646, 325, 32, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='DIV' type='' class='sc-c5358bb8-1 ixcZce' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="36e1f13b-f19e-4eb5-a161-ea455f444e71" InformativeScreenshot="8e94ba97b1fad1ba50a354addf648fb1.png" Reference="BzXtTaSwp0OnAqBIfr9gMw/oMMslNFv8kGmHY4KQMHLYw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Black Phone 2 (2025) - IMDb' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="483.2,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[Popularity]" />
+              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Untitled - Notepad" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="483.2,720.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="IfNotOpen" ScopeGuid="0fd5aae6-25c7-4c22-92aa-cadfb50c59ee" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,428.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Notepad'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,279.2" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="0fd5aae6-25c7-4c22-92aa-cadfb50c59ee" Text="[&quot;CurrentURL: &quot;+CurrentURL+ Environment.NewLine + &#xD;&#xA;&quot;Popularity: &quot; + Popularity.ToString + Environment.NewLine + &#xD;&#xA;&quot;Rate: &quot; + Rate.ToString]" Version="V5">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable CVScreenId="9cdb5d01-6702-45f8-b0aa-5e38e051b2d4" ContentHash="IAW-l7qZf0KzkXgxq-5VCw" CvElementArea="7, 88, 1425, 609" CvType="InputBox" DesignTimeRectangle="8, 93, 1424, 604" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="d3e5fef7-72bc-4e9a-9b78-fe9649c4bfd4" InformativeScreenshot="07afe04ca1178c652d3c4d65eac8c8b2.png" Reference="BzXtTaSwp0OnAqBIfr9gMw/vBAEfho0RUicB8CITedlKg" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="-9, -9, 1938, 1038" ContentHash="EbKt82U0M0ijmw1TEAcr-g" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATRSURBVFhHtdVbc1NVFAfwvvhQkyfvfgvEL6ADtFCsLaUVW7G0tQoqSkUooha8zvDikw/qkxUdZ4BhpEVAaJqUJFxaoWlD06ZJmmvTFrklqM/LtfY5+2SfuE+yT5Pumf9k5gSyf11rZaVG5TzS9+06TJJe9UfsWD2nY/We1fOKDn5YDgP0qj9ix+o5Hav3rJ7bOkcj/67D5DBwZP4f+jAjn8w9hI9nH8Lh2bzpef/MAzh4i3IfDgTvm977YOou9AXuwD6M+Hzvzdvw7g3KSu6dP1fUK0o4gg1gPg3/Dc7+H4wPJdjhUB4+CuXw+ffGcw77MHgP9k/fA4fwHsH2Td6B9yf/AsfBwnOEAcLg7YllinpFCTaAMMJRxXr9SYZsPDOJsDwcQlz/TA66x+IM2XD6BsIQhzDCUcV2uqMMWX9qgsHeu0m5De0j8wy58cR1xDEY7JlYgt3jS6BfX/5oMA3H28lhhxDWz1r5gFWMVU2Aie0UYXu1VrKK8artoSCMcG9dz6oDi2HUTgYrmjPezv1TGk6EcZwwZ2I7TbA3KdcW1YHinGkwc9WonWbYXdOccZi5av+HMRzCejFvXM2oA63aWTxnfUrtNM/Z7nEOyzJY71UN13PFBtDunBlVU5gz3k5etR5M95U0dPvT6sDScyZvZ7k5K24nwXp0WJc/Bbt8KXWgrJ3PfvGzsb8qzVOfHWdV6xJwnb6kOlA2Z7KLKokIe92LuZxQB8rm7JnPq1jBoz8xWCfBvAnYibjXLsfVgdWaM+3baZ6zXQYsyWAMh79IHRj9+vJHXBuW+8xibZhgkjnj7RRhHZ4FaMfo15c/8n1msTYk+4yvDRFmamcR7FV3DHZg9OvLHzs/T6XWRqGdhTnTcBym40Zj8MpoVB0ogz2Nq0E28KvJE/gl4VUjGKXNFVEHyuZMdlElEWGtI5R5daDs56mqFTwyyGActx1xLZdsAFc3Z8VrQz5nba5C1Qi2HWEtl8Kw7WJYHah9OyX7zGJtmGFxBhO/nbJ2irDmi3PQ/MecOlBlbZTaZxy2owyM4RDWhHn5wqw60Kqdsp8neTsLsOI5M6qmw5oQRrjG8yF1oGzOnsTVIBv41eTxgUHEFWAvUc7NqANlcya7qJI0XghpuHMh2Iq4ht9tAE3t1OesmhV8bOBHVjWCabhbsAWjX1/+2Pl5Kl4b5eaMt1OEbT4bhM3DQXUgwcRvp2xtlNpnfG0Yc2a00wzbQjBMPeLqhqfVgVZrg2B21oZszhjurFY1gtUjrG5oGjYNTakDS+2zcu0kmNjO4jnj7RRhG89QAurALqxeteeMtbMItonBpmDDbwHYOmyjgufHA9Dp4Ti7c1Zop2zOxKoRjOGGAnDS7VcHBoNB8Pl84PV6YWxszBSPxyON2+02Mjo6aorL5TIyMjJiCr1Pn+v32wAmo2FIp9OQTCaNJBIJI/F43MjCwoKRWCxmSjQaNRKJRKShf8f+b9jGov66/XnIJGKwsrICy8vLRpaWlkzJZrNGFhcXjWQyGVPoj+VJpVJG6A+n13hkFo51rFcHflNXC1+9WAtfvrD2oXuObaiF7xoeVQf+ss2RP97sgMGmtQ/dg/fBry2OvH59+XO6zfncyVZn7kSrE9Y6eA+canPm6E79euHU1PwHBiSQobPvwrkAAAAASUVORK5CYII=" InformativeScreenshot="4aa389b78386052ef7c2505cb32a8953.png" Reference="BzXtTaSwp0OnAqBIfr9gMw/JAV9p9d8U0iEzx3JL_zb8Q" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='*Untitled - Notepad' /&gt;" Version="V2" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Edge" ContentHash="RhlbFkDwQ0uXV8c_--ELVg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAdVJREFUWEftlDssQ1EYx69q7+2tPt2iJjERLJV4LMSgBq9OWBjaREKICBI0MZSQVEMIDQORWiRKjBUbJWHvZMUuwfy53znpfbSJ3EgwOMMv53/O7fm+X865vdzHnQ/+EibABJgAE2ACBQLHyy4ItPAwGLDCzYFEMhLqF+HlslyZI9mUVzfvauUhErbDW6YCJodsZC0+7dDVz6dAIDpmB47jwCeZ4DzuIRkRBQ5uDyVljtwn1bnHUaTkkzU3NDdYSA7L4vk9tBgWQGJTDt1cK5De8YC5mOatWacigCeXirkJ77cVul6IIQHeQgvjkeJJYEa0AleJUrBZ6SloBQRe/f3KuF3XCzEkUFNVTEarXKyu2qwU/EqgqZ4KDHeLEOwQSO5rF3S9EEMC/lozVHpNJPe00WKIkRMIB0UC5l55b34/QwKNskCbnycZ324ckXyB3PX8iAC+TJg3Z9QXUSuwNEr3Idtz6hWMyFcw0Gkl+dtXgAKrE7TxxQZdQ7QCOUwmDu6OJOUELGb12WKoRNcLKRB4OJZgL+KEZNQFjxdlJKfW3ZA99ZL8lC4nI/Kcps9z7MvgfqxzFneTtYz8MUssOGF33gmv1wb+hr8NE2ACTIAJ/HcBH3wCnyEaX70T9tEAAAAASUVORK5CYII=" InformativeScreenshot="9f98ed23b6c46554b15f24b47a3f38ed.jpg" Reference="BzXtTaSwp0OnAqBIfr9gMw/yiJ8xKmGkU-YtN2kPyOLKw" Selector="&lt;html app='msedge.exe' title='Black Phone 2 (2025) - IMDb' /&gt;" Url="https://www.imdb.com/title/tt29644189/?ref_=nv_srb_trend_title_0" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
