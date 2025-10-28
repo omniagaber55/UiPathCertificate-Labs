@@ -1,0 +1,15 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "entryPoints": [
+    {
+      "filePath": "ClassicActivities_WeatherApp.xaml",
+      "uniqueId": "2a7674ce-861a-4c59-b693-3203ced770a3",
+      "type": "process"
+    },
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "e4420a2a-81c4-4f44-b004-87827e9ede4e",
+      "type": "process"
+    }
+  ]
+}
